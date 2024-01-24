@@ -1,0 +1,17 @@
+.card {
+    padding: 4.5rem;
+    border: 2px solid white;
+    color: red;
+    border-radius: 1.6rem;
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        padding: 1.2rem;
+    }
+}

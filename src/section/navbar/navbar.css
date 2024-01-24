@@ -1,0 +1,56 @@
+nav {
+    padding: 1.6rem 0 0;
+    height: 50vh;
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(90deg, #000 26%, #192229 , white 64%);
+} 
+ nav::after {
+    content: "";
+    background: palegreen;
+    position: absolute;
+    transform: skewY(-5deg);
+    z-index: -1;
+    background: linear-gradient(90deg, #030303 28%, #192229 35%, #171717);    
+     /* top:0, bottom: 0; left: 0, right: 0 can be written below  */
+    inset: 0;
+    border-color: transparent;
+    background-image: url("../../assets/images.jpg");
+        background-position: left;
+    background-size: contain;
+}
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+ .logo{display: flex;
+    gap: 0.5rem;
+    color: white;
+    flex: 1;
+     }
+
+ .logoImage{
+    transform: rotate(-180deg);
+    color: red;
+    font-size: 1.5rem;
+}
+.logo h2 {
+    font-size: 1.5rem;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+} 
+
+ul li a{
+    font-size: 1.2rem;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    ul{
+        display: none;
+    }
+}

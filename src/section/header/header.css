@@ -1,0 +1,79 @@
+ .header__text{
+    color: white;
+    position: absolute;
+    left: 10rem;
+    bottom: -6rem;
+    width: 18%;
+    font-weight: bold;
+    display: block;
+    font-size: 2rem;
+}
+span{
+    color: red;
+    display: block;
+        font-weight: bold;
+            font-size: 3.7rem;
+}
+.header__text h1{
+    font-weight: bold;
+    font-size: 3.7rem;
+} 
+
+.header__container{
+    display: flex;
+    width: 100%;
+}
+.header__cards{
+    position: absolute;
+    left: 40%;
+    display: flex;
+    background-color: white;
+    gap: 3rem;
+    bottom: -5rem;
+    width: 48%;
+    justify-content: space-between;
+    padding:2.5rem 5rem;
+    box-shadow: 7px 7px 4px gray;
+}
+.header__card h1{
+    margin-bottom: 1rem;
+}
+.header__card p{
+    text-align: center;
+}
+@media screen and (max-width:600px) {
+    .header__text {
+        left: 1rem;
+    }
+    .header__text h1, .header__text h1 span{
+        font-size: 2.9rem;
+    }
+    .header__cards {
+        left: 50%;
+        display: block;
+        padding: 0.7rem 1.4rem;
+        width: unset;
+    }
+    .header__container {
+        padding: unset;
+        width: 100vw;
+    }
+    .header__card {
+        display: flex;
+        gap: 0.4rem;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1023px) {
+    .header__cards {
+            left: 55%;
+            display: block;
+            padding: 0.7rem 1.4rem;
+            width: unset;
+        }
+                  .header__card {
+                      display: flex;
+                      gap: 1rem;
+                      justify-content: center;
+                  }
+}
